@@ -30,6 +30,7 @@ int main(int argc, char *argv[]) {
         }
     }
 
+    zmq_close(publisher);
     zmq_ctx_destroy(ctx);
 
     return 0;
